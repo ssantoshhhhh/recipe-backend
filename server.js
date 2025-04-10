@@ -14,7 +14,7 @@ app.get("/",(req,res)=>{
   res.send("The Recipe API is Working Fine");
 })
 
-
+app.use("/",require("./routes/user"))
 app.use("/recipe",require("./routes/recipe"))
 
 
